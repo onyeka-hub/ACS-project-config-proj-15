@@ -81,7 +81,7 @@ setsebool -P httpd_can_network_connect_db=1
 setsebool -P httpd_execmem=1
 setsebool -P httpd_use_nfs 1
 ```
-## this section will instll amazon efs utils for mounting the target on the Elastic file system
+## this section will install amazon efs utils for mounting the target on the Elastic file system
 ```
 git clone https://github.com/aws/efs-utils
 
@@ -109,7 +109,7 @@ vi /etc/httpd/conf.d/ssl.conf
 
 
 # Login into the RDS instnace  and create  database for wordpress and tooling wordpress and tooling database
-mysql -h acs-database.cdqpbjkethv0.us-east-1.rds.amazonaws.com -u ACSadmin -p 
+mysql -h acs-database.cdqpbjkethv0.us-east-1.rds.amazonaws.com -u onyiadmin -p 
 
 CREATE DATABASE toolingdb;
 CREATE DATABASE wordpressdb;
