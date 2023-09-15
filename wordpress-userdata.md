@@ -17,9 +17,9 @@ mkdir /var/www/html/
 cp -R /wordpress/* /var/www/html/
 cd /var/www/html/
 touch healthstatus
-sed -i "s/localhost/onyi-database.cxddihah2qtf.us-east-2.rds.amazonaws.com/g" wp-config.php 
-sed -i "s/username_here/onyiadmin/g" wp-config.php 
-sed -i "s/password_here/onyi12345/g" wp-config.php 
+sed -i "s/localhost/database-1.chqrr77fijqc.us-east-2.rds.amazonaws.com/g" wp-config.php 
+sed -i "s/username_here/onyi_admin/g" wp-config.php 
+sed -i "s/password_here/admin12345/g" wp-config.php 
 sed -i "s/database_name_here/wordpressdb/g" wp-config.php 
 chcon -t httpd_sys_rw_content_t /var/www/html/ -R
 systemctl restart httpd
