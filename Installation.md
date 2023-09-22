@@ -10,11 +10,13 @@
 
 # Bastion ami installation
 -------------------------------------
+```
 yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
 yum install -y dnf-utils http://rpms.remirepo.net/enterprise/remi-release-8.rpm
 yum install wget vim python3 telnet htop git mysql net-tools chrony -y
 systemctl start chronyd
 systemctl enable chronyd
+```
 
 # Nginx ami installation 
 -----------------------------------------
@@ -106,14 +108,13 @@ vi /etc/httpd/conf.d/ssl.conf
 ```
 
 
-
-
-# Login into the RDS instnace  and create  database for wordpress and tooling wordpress and tooling database
+# Login into the RDS instnace  and create  database for wordpress and tooling, wordpressdb and toolingdb database
+```
 mysql -h acs-database.cdqpbjkethv0.us-east-1.rds.amazonaws.com -u onyiadmin -p 
 
 CREATE DATABASE toolingdb;
 CREATE DATABASE wordpressdb;
-
+```
 
 # References
 [IP ranges](https://ipinfo.io/ips)

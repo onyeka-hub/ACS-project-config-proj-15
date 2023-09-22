@@ -1,4 +1,5 @@
 # bastion userdata
+
 #!/bin/bash
 
 yum install -y mysql
