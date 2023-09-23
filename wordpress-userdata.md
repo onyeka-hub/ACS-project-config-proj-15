@@ -48,11 +48,3 @@ sudo chcon -t httpd_sys_rw_content_t /var/www/html/ -R
 
 sudo systemctl restart httpd
 
-
-
-
-
-
-
-
-

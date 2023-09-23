@@ -39,10 +39,3 @@ sed -i "s/$db = mysqli_connect('mysql.tooling.svc.cluster.local', 'admin', 'admi
 sudo chcon -t httpd_sys_rw_content_t /var/www/html/ -R
 
 sudo systemctl restart httpd
-
-
-
-
-
-
-
